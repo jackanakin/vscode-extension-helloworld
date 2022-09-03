@@ -1,8 +1,14 @@
 {
-  "name": "myhint",
-  "displayName": "myhint",
+  "author": {
+    "name": "Jardel Kuhn",
+    "email": "jkuhn2@universo.univates.br"
+  },
+  "publisher": "jardelkuhn",
+  "name": "helloworld",
+  "icon": "icon.png",
+  "displayName": "Hello World",
   "license": "MIT",
-  "description": "",
+  "description": "Hello world extensions including command and snippet",
   "repository": {
     "type": "git",
     "url": "https://github.com/jackanakin/vscode-extension-helloworld.git"
