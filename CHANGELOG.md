@@ -6,4 +6,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+- 
+
+## [0.0.2] - 2022-09-04
+### Added
+- Explorer View
+
+## [0.0.1] - 2022-09-03
+
 - Initial release
+
+### Added
+- Commands
+- Snippets

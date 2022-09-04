@@ -8,12 +8,12 @@
   "icon": "icon.png",
   "displayName": "Hello World",
   "license": "MIT",
-  "description": "Hello world extensions including command and snippet",
+  "description": "Hello world extensions including command, snippet and explorer view",
   "repository": {
     "type": "git",
     "url": "https://github.com/jackanakin/vscode-extension-helloworld.git"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -23,10 +23,30 @@
   ],
   "activationEvents": [
     "onCommand:jk@hint.hint",
-    "onCommand:jk@hint.time"
+    "onCommand:jk@hint.time",
+
+    "onView:calicoColors.colorsView"
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "calicoColors.colorsView",
+          "name": "Calico Colors"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "calicoColors.clearColors",
+          "group": "navigation",
+          "when": "view == calicoColors.colorsView"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "jk@hint.hint",
@@ -35,6 +55,18 @@
       {
         "command": "jk@hint.time",
         "title": "jk@time"
+      },
+      
+      {
+        "command": "calicoColors.addColor",
+        "category": "Calico Colors",
+        "title": "Add Color"
+      },
+      {
+        "command": "calicoColors.clearColors",
+        "category": "Calico Colors",
+        "title": "Clear Colors",
+        "icon": "$(clear-all)"
       }
     ],
     "snippets": [

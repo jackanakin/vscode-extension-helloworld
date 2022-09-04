@@ -31,3 +31,6 @@ Added features Command and Snippets.
 
 ---
 
+### 0.0.2
+
+Add feature Explorer View
