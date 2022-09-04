@@ -22,15 +22,4 @@ This extension contributes the following settings:
 
 Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
-
-### 0.0.1
-
-Initial release
-Added features Command and Snippets.
-
----
-
-### 0.0.2
-
-Add feature Explorer View
+[Change Log](CHANGELOG.MD)
